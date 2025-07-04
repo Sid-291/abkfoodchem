@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABKFOODCHEM LLP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* === CSS from previous steps including full layout === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7f6;
+      color: #2d3e50;
+      line-height: 1.6;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    .hero {
+      background: linear-gradient(to right, #001f3f, #003c6c);
+      text-align: center;
+      padding: 80px 0 40px;
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      animation: shimmer 4s linear infinite;
+      background-size: 1000px 100%;
+      background-image: linear-gradient(110deg, #001f3f 40%, #003c6c 60%, #001f3f 80%);
+    }
+    @keyframes shimmer {
+      0% { background-position: -500px 0; }
+      100% { background-position: 500px 0; }
+    }
+    .hero .logo {
+      max-width: 180px;
+      margin-bottom: 20px;
+      animation: fadeInLogo 1.5s ease-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeInLogo {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .tagline {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+      margin-top: 10px;
+      font-weight: 500;
+      animation: pulse 2.5s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .products img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 10px;
+    }
+    .certification-icons img {
+      width: 80px;
+      margin: 0 10px;
+    }
+    .cert-note {
+      background: #e0f2f1;
+      color: #004d40;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .faq details {
+      background: #ffffff;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    footer {
+      background: #1b1b1b;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <img src="logo.png" alt="ABKFOODCHEM Logo" class="logo">
+      <h1>ABKFOODCHEM LLP</h1>
+      <p class="tagline">Premium Quality Ingredients for a Safer, Tastier Tomorrow</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We are a leading food chemical supplier committed to delivering top-quality ingredients like Citric Acid and Papad Khar to our clients. Our products meet the highest standards in food safety and quality.</p>
+  </section>
+
+  <section class="products">
+    <h2>Our Products</h2>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Citric_acid.jpg" alt="Citric Acid">
+      <p><strong>Citric Acid</strong></p>
+    </div>
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Papad_Khar_powder.jpg" alt="Papad Khar">
+      <p><strong>Papad Khar</strong></p>
+    </div>
+  </section>
+
+  <section class="certifications">
+    <h2>Certifications</h2>
+    <div class="certification-icons">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/FSSAI_logo.svg/512px-FSSAI_logo.svg.png" alt="FSSAI">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ISO_Logo.svg/512px-ISO_Logo.svg.png" alt="ISO">
+    </div>
+    <p class="cert-note">FSSAI License No: 10723002000179</p>
+  </section>
+
+  <section class="why">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Trusted food-grade manufacturing process</li>
+      <li>Safe & reliable packaging</li>
+      <li>Certified products for global compliance</li>
+    </ul>
+  </section>
+
+  <section class="faq">
+    <h2>FAQs</h2>
+    <details>
+      <summary>Are your products food-grade certified?</summary>
+      <p>Yes, all our products are certified and meet food safety standards.</p>
+    </details>
+    <details>
+      <summary>Can I order in bulk?</summary>
+      <p>Yes. We support bulk and wholesale supply for food manufacturers.</p>
+    </details>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p><strong>Email:</strong> abkfoodchem@gmail.com | kamleshpashala424@gmail.com | siddhpadsala291@gmail.com</p>
+    <p><strong>Phone:</strong> 9327052753, 6353094359</p>
+    <p><strong>Address:</strong> Plot no. 105, Mega Vibrant Industrial Estate, B/h Hasmukh Goswami College, Vehlal Zak, Ahmedabad, Gujarat</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ABKFOODCHEM LLP. All rights reserved.</p>
+    <p>Made with ❤️ to serve safe food ingredients.</p>
+  </footer>
+</body>
+</html>
